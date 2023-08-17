@@ -21,6 +21,10 @@ onMounted(() => {
     injectedValue.thumbElement.value = thumbElement.value;
 });
 
+defineOptions({
+  inheritAttrs: false,
+})
+
 const props = withDefaults(defineProps<SliderThumbProps>(), {
   as: "span",
 });
